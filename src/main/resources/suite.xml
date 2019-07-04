@@ -1,0 +1,16 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite">
+
+    <test name="testOpenPage">
+
+        <parameter name="browser" value="${browser_version}"/>
+<!--        <parameter name="browser" value="${browser_version}"/>-->
+
+        <classes>
+            <class name="test.TestCarSearch"/>
+        </classes>
+    </test>
+
+</suite>
