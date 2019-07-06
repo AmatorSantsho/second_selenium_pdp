@@ -40,7 +40,13 @@
                 <configuration>
                     <systemPropertyVariables>
                         <!--suppress UnresolvedMavenProperty -->
-                        <browser>${browser_version}</browser>
+                        <browser>${browser}</browser>
+                        <!--suppress UnresolvedMavenProperty -->
+                        <car>${car}</car>
+                        <!--suppress UnresolvedMavenProperty -->
+                        <startPrice>${startPrice}</startPrice>
+                        <!--suppress UnresolvedMavenProperty -->
+                        <endPrice>${endPrice}</endPrice>
                     </systemPropertyVariables>
                 </configuration>
             </plugin>

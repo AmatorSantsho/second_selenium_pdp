@@ -1,6 +1,5 @@
 package steps;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import page.CarPage;
 import page.HomePage;
@@ -19,16 +18,16 @@ public class CommonSteps {
         return homePage;
     }
 
-    public String getColorFromMenuHeader(HomePage homePage)
-    {
+    public String getColorFromMenuHeader(HomePage homePage) {
         return homePage.getHeaderColor();
     }
-    public String getMenuHeader(){
+
+    public String getMenuHeader() {
         return homePage.getHeaderMenuContent();
     }
 
-    public boolean isPriceOfFirstCarInsideRange(String startPrice, String endPrice ){
-       return carPage.isPriceInsideRange(startPrice, endPrice);
+    public boolean isPriceOfFirstCarInsideRange(String startPrice, String endPrice) {
+        return carPage.isPriceInsideRange(startPrice, endPrice);
     }
 
     public CarPage selectCar(String carBrand) {
@@ -38,9 +37,8 @@ public class CommonSteps {
         return carPage;
     }
 
-    public CarPage filterByPrice(String startPrice, String endPrice){
+    public void filterByPrice(String startPrice, String endPrice) {
         carPage.setStartPrice(startPrice);
         carPage.setEndPrice(endPrice);
-        return new CarPage(driver);
     }
 }

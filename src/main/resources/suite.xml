@@ -5,11 +5,16 @@
 
     <test name="testOpenPage">
 
-        <parameter name="browser" value="${browser_version}"/>
-<!--        <parameter name="browser" value="${browser_version}"/>-->
-
+<parameter name="browser" value="Chrome"/>
+        <parameter name="browser" value="${browser}"/>
+        <parameter name="car" value="${car}"/>
+        <parameter name="startPrice" value="${startPrice}"/>
+        <parameter name="endPrice" value="${endPrice}"/>
         <classes>
-            <class name="test.TestCarSearch"/>
+
+            <class name="test.TestCarSearch">
+
+            </class>
         </classes>
     </test>
 
